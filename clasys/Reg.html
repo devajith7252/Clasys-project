@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>Registration</title>
+<style>
+html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#008cba; 
+    height:100%;
+}
+.container{ 
+   height:100%;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+}
+.content{
+    background-color:white;
+    width:500px;
+    height:670px;
+}
+.form-title{
+    padding:10px 40px 0px;
+}
+form{
+    padding:0px 40px;
+}
+input[type=text], [type=email]{
+    border: none;
+    border-bottom: 1px solid black;
+    outline:none;
+    width:100%;
+    margin: 8px 0;
+    padding:10px 0;
+}
+input[type=number]{
+    border: none;
+    border-bottom: 1px solid black;
+    outline:none;
+    margin: 8px 0;
+    padding:5px 0;
+}
+input :hover {
+    background-color: red;
+}
+select{
+    border: none;
+    border-bottom: 1px solid black;
+    outline:none;
+    margin: 8px 0;
+    padding:5px 0;
+    width:50%;
+}
+.beside{
+    display:flex;  
+    justify-content: space-between;
+}
+button{
+    color:#ffffff;
+    background-color: #4caf50;
+    height:40px;
+    width:25%;
+    margin-top:15px;
+    cursor: pointer;
+    border:none;
+    border-radius:2%;
+    outline:none;
+    text-align:center;
+    font-size:16px;
+    text-decoration:none;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+}
+button:hover{
+    background-color:#333333;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+            <h1 class="form-title">Register Here</h1>
+            <form>
+               <input type="text" placeholder="FIRST NAME">
+			   <input type="text" placeholder="LAST NAME">
+			   DOB <input type="date"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			   <input type="number" placeholder="AGE"><br>
+			 
+			   <div class="beside">
+                <input type="number" placeholder="PHONE NUMBER">
+                <select>
+                    <option>GENDER</option>
+                    <option>MALE</option>
+                    <option>FEMALE</option>
+                    <option>OTHER</option>
+                </select>
+            </div>
+                <input type="email" placeholder="EMAIL">
+				<input type="text" placeholder="ADDRESS">
+				 <div class="beside">
+				 <select>
+                    <option>STATE</option>
+                    <option>KERALA</option>
+                    <option>TAMILNADU</option>
+                    <option>KARNATAKA</option>
+					<option>MAHARASTRA</option>
+                </select>
+				<select>
+                    <option>CITY</option>
+                <optgroup label="KERALA">
+                <option value="New York City">Alappuzha</option>
+                <option value="Albany">Kottayam</option>
+                <option value="Buffalo">Kochi</option>
+            </optgroup>
+            <optgroup label="TAMILNADU">
+                <option value="Los Angeles">Chennai</option>
+                <option value="San Francisco">Madurai</option>
+                <option value="San Diego">Selam</option>
+            </optgroup>
+                </select>
+				 </div>
+				
+                <input type="text" placeholder="USERNAME"><br>
+				<input type="text" placeholder="PASSWORD"><br>
+				<input type="text" placeholder="CONFIRM PASSWORD"><br>
+				
+				
+                <button type="button">Submit</button>
+            </form>
+        </div>
+ </div>
